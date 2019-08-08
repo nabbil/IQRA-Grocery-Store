@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4> here is my sweet sweet products page. </h4>
+
+{% for prod in product %}
+
+<div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://bit.ly/2Yy5vNJ" class="card-img-top" alt="root veggies">
+            <div class="card-body">
+                <h4 class="card-title">{{ prod.name }}</h4>
+                <p4 class="card-text"> {{ prod.price }}</p4> 
+                <a href="#" id="custom-button" class="btn btn-primary">Buy that shit</a>
+            </div>
+        </div>
+</div>
+
+{% endfor %}
+
+
+{% endblock content %}
+
