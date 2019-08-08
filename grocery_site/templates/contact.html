@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style type="text/css">
+    .jumbotron {
+        background-image: url("https://www.actualtech.io/wp-content/uploads/2015/11/green-Polygon-background-3.jpg");
+        background-size: cover;
+        color: whitesmoke;
+        min-height: 200px;
+    }
+</style>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="container text-center">
+            <h1 class="display-4">Contact Us</h1>
+
+        </div>
+    </div>
+</div>
+
+<!--Section: Contact v.2-->
+<section class="section">
+
+    <style type="text/css">
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <!--Section heading-->
+    <div class="container">
+        <div class="container text-center">
+            <img src="https://i.postimg.cc/pLq8722h/Email-Address-Hotline.png" alt="Email|Address|Hotline">
+        </div>
+    </div>
+
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <style type="text/css">
+                .map-container-7 {
+                    overflow: hidden;
+                    padding-bottom: 50%;
+                    position: relative;
+                    height: 0;
+                }
+
+                .map-container-7 iframe {
+                    left: 0;
+                    top: 0;
+                    height: 90%;
+                    width: 100%;
+                    position: absolute;
+                }
+            </style>
+
+
+
+
+            <!--Google map-->
+            <div id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
+                <iframe src="https://maps.google.com/maps?q=Miami&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="row">
+
+
+
+                <div class="container">
+                    <div class="container text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis placeat doloremque non
+                            dignissimos quod cum deleniti asperiores reiciendis vero ducimus temporibus excepturi
+                            voluptatum nobis, hic at blanditiis sequi porro.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container text-center">
+                        <img src="http://pngriver.com/wp-content/uploads/2018/04/Download-Chat-Bubble-Png-Image-100803-For-Designing-Projects.png"
+                            alt="Pixel Art Chat Bubble" style="width:150px;height:150x;"> </div>
+                </div>
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <form>
+
+                        <div class="md-form">
+                            <input type="text" id="contact-name" class="form-control">
+                            <label for="contact-name" class="">Your name</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="contact-email" class="form-control">
+                            <label for="contact-email" class="">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" id="contact-Subject" class="form-control">
+                            <label for="contact-Subject" class="">Subject</label>
+                        </div>
+
+                    </form>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <div class="md-form primary-textarea">
+                        <textarea id="contact-message" class="md-textarea form-control mb-0" rows="5"
+                            style="padding-bottom: 1.2rem;"></textarea>
+                        <label for="contact-message">Your message</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <a class="btn btn-mdb-color btn-block">Send Message</a>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
+{% endblock content %}
