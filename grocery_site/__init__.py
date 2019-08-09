@@ -6,7 +6,6 @@ from flask_login import LoginManager
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-basedir = os.path.abspath(os.path.dirname(__file__))
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 

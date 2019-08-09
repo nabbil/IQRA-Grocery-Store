@@ -120,6 +120,37 @@
                         <a class="btn btn-mdb-color btn-block">Send Message</a>
                     </div>
                 </div>
+
+                <!--ContactcUS Form Starts Here-->
+                <h1>Contact Us Here:</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Contact Form:</p>
+                        <form action="" method="POST">
+                            {{ form.hidden_tag() }}
+                            <fieldset>
+                                {{ form.name.label}}
+                                {{ form.name(class="form-control") }}
+                            </fieldset>
+                            <fieldset>
+                                <label for="email">Email</label>
+                                {{ form.email(class="form-control") }}
+                            </fieldset>
+
+                            <fieldset>
+                                {{ form.subject.label}}
+                                {{ form.subject(class="form-control") }}
+                            </fieldset>
+                            <fieldset>
+                                {{ form.message.label}}
+                                {{ form.message(class="form-control") }}
+                            </fieldset>
+                            {{ form.submit() }}
+                        </form>
+                    </div>
+                </div>
+                <!--Contact US Form Starts Here-->
+
                 <!--Grid column-->
 
             </div>
