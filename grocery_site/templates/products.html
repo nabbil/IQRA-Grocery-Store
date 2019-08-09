@@ -4,20 +4,25 @@
 
 <h4> here is my sweet sweet products page. </h4>
 
+
+<div class="container">
+    <div class="row">
 {% for prod in product %}
-
-<div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-            <img src="https://bit.ly/2Yy5vNJ" class="card-img-top" alt="root veggies">
-            <div class="card-body">
-                <h4 class="card-title">{{ prod.name }}</h4>
-                <p4 class="card-text"> {{ prod.price }}</p4> 
-                <a href="#" id="custom-button" class="btn btn-primary">Buy that shit</a>
-            </div>
-        </div>
-</div>
-
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ prod.photo }}" class="card-img-top" alt="root veggies">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ prod.name }}</h4>
+                            <p class="card-text"> {{ prod.price }}</p> 
+                            <a href="#" id="custom-button" class="btn btn-primary">Buy it now</a>
+                        </div>
+                    </div>
+                </div>
+               
 {% endfor %}
+        
+    </div>
+</div>
 
 
 {% endblock content %}

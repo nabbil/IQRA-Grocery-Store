@@ -1,11 +1,13 @@
-.header-nav{
-    border-radius: 40px !important;
-    border-color: yellowgreen;
-    border-style: thin solid;
-
-}
-body {
-    background-color: white;
-}
-
 /* Leyla's CSS Code for Products Page */
+
+.card-img-top {
+    height: 180px !important;
+    width: 286px !important;
+}
+
+/* .card {
+    height: 150px !important;
+    width: 150px !important;
+    background-color: red !important;
+} */
+
