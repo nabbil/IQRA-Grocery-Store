@@ -1,49 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"async></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"async></script>
+<<!DOCTYPE html>
+    <html lang="en">
 
-</head>
-<header>
-</header>
-<!-- Hero image with search bar -->
-<form class="form-inline my-2 my-lg-0, header-nav">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+            async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"
+            async></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
+            async></script>
+
+    </head>
+    <header>
+
+    </header>
+    <!-- Hero image with search bar -->
+    <form class="form-inline my-2 my-lg-0, header-nav">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <P> IQRAM GROCERY STORE</P>
+    </form>
     <!--Navbar Start-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ url_for('hello_world') }}">IQRA Grocery Store</a>
+    <nav class="navbar navbar-expa nd-lg navbar-success bg-success">
+        <a class="navbar-brand" href="#">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="{{ url_for('hello_world') }}">HOME<span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">PAGE</a>
-                <a class="nav-item nav-link" href="#">PRODUCTS</a>
+                <a class="nav-item nav-link active" href="#">PAGE <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="home.html">PRODUCT</a>
                 <a class="nav-item nav-link" href="#">BLOG</a>
-                <a class="nav-item nav-link" href="#">ABOUT US</a>
-                <a class="nav-item nav-link" href="#">CONTACT US</a>
+                <a class="nav-item nav-link" href="/about">ABOUT US</a>
+                <a class="nav-item nav-link" href="/contact">CONTACT US</a>
 
             </div>
         </div>
     </nav>
+    </div>
+    </div>
+    </nav>
     <!--Navbar End-->
-<body>
-    {% block content %}
-    {% endblock content %}
-</body>
 
-</html>
+    <body>
+        {% block content %}
+        {% endblock content %}
+
+
+    </body>
+
+    </html>
