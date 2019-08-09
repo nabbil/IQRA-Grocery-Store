@@ -2,25 +2,32 @@
 
 {% block content %}
 
-<h4> here is my sweet sweet products page. </h4>
-
-
 <div class="container">
     <div class="row">
-{% for prod in product %}
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ prod.photo }}" class="card-img-top" alt="root veggies">
-                        <div class="card-body">
-                            <h4 class="card-title">{{ prod.name }}</h4>
-                            <p class="card-text"> {{ prod.price }}</p> 
-                            <a href="#" id="custom-button" class="btn btn-primary">Buy it now</a>
-                        </div>
+        <div class="col-sm-4 sideprod">
+            <h1>wtf man</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit eum porro autem placeat doloremque numquam quia eos nihil molestias, facilis enim aut ut vitae. Sed officiis explicabo vero nihil.</p>
+               
+        </div>
+    </div>
+<!-- </div>
+
+
+
+<div class="container"> -->
+    <div class="row">
+        {% for prod in product %}
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ prod.photo }}" class="card-img-top" alt="root veggies">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ prod.name }}</h4>
+                        <p class="card-text"> {{ prod.price }}</p> 
+                        <!-- <a href="#" id="custom-button" class="btn btn-primary">Buy it now</a> -->
                     </div>
                 </div>
-               
-{% endfor %}
-        
+            </div>           
+        {% endfor %}
     </div>
 </div>
 

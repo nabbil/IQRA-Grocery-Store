@@ -2,12 +2,25 @@
 
 .card-img-top {
     height: 180px !important;
-    width: 286px !important;
+    width: 286px !important; */
+    /* background-color: red; */
 }
 
-/* .card {
-    height: 150px !important;
-    width: 150px !important;
-    background-color: red !important;
-} */
+.card {
+    margin: 10px !important;
+}
 
+.card-title{ 
+    text-align: center !important;
+}
+.card-text {
+    text-align: center !important;
+}
+
+.sideprod{
+    float: left !important;
+    width: 0 auto;
+}
+.rsideprod{
+    float: right;
+}
